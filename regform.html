@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="regstyle.css">
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Registeration Successful.";
+        }
+        </script>
+</head>
+<body>
+<div class="main">
+    <div class="main1">
+    <h1>Patient Registration Form</h1>
+    </div>
+    <form class="form" i="form">
+        <div class="form-control">
+            <label>Patient's Name</label>
+            <input type="text" name="" id="name" placeholder="Enter Patient's Full Name"  autocomplete="off">
+        </div>
+        <div class="form-control">
+            <label>Gender:<select name="Gender">
+                <option value="none">--Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select></label>
+        </div>
+        <div class="form-control">
+            <label>Patient's Age</label>
+            <input type="number" name="" id="age" placeholder="Enter Patient's Age"  autocomplete="off">
+        </div>
+        <div class="form-control">
+            <label>Phone Number</label>
+            <input type="number" name="" id="number" placeholder="Enter Phone Number" autocomplete="off">
+        </div>
+        <div class="form-control">
+            <label>Date Of birth</label>
+            <input type="date" name="" id="dob" placeholder="DD/MM/YYYY" autocomplete="off">
+        </div>
+        <div class="form-control">
+            <label>Patient's Address</label>
+            <input type="text" name="" id="address" placeholder="Street Address"  autocomplete="off"><br>
+            <input type="text" name="" id="city" placeholder="City"  autocomplete="off">
+            <input type="text" name="" id="state" placeholder="State"  autocomplete="off">
+            <input type="number" name="" id="pin" placeholder="Zip/Pin Code"  autocomplete="off">
+        </div>
+        <div class="form-control">
+            <label>Patient's/Guardian's Signature</label>
+            <input type="text" name="" id="signature" placeholder="Enter Your Signature">
+        </div>
+        <button class="button" type="button" onclick="myFunction()">Submit</button><br>
+        <p id="demo" style="font-family: cursive; text-align: center;"></p>
+        <a href="homepage.html" class="but">Home</a></button>
+        <button class="but" onclick="window.print()">Print this page</button>
+    </form>
+</div>
+</body>
+</html>
